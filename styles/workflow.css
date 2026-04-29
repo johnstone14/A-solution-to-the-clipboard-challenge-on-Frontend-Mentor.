@@ -1,0 +1,68 @@
+.workflow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.workflow-features {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    gap: 30px;
+    font-size: 16px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 350px;
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+    h1 {
+        margin-bottom: 24px;
+    }
+
+.imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10rem;
+}
+
+@media (max-width: 768px) {
+    .workflow {
+        & h1 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        & p {
+            font-size: 16px;
+            text-align: center;
+            padding-inline: 30px;
+            line-height: 25px;
+        }
+    }
+
+    .workflow-features {
+        padding-inline: 30px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .imgs {
+        flex-direction: column;
+        gap: 50px;
+    }
+}

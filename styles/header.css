@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 35px;
+    max-width: 640px;
+
+    & img {
+        margin-top: 130px;
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.two-buttons {
+    display: flex;
+    gap: 20px;
+
+    & button {
+        background-color: var(--blue-100);
+        border: none;
+
+        border-radius: 25px;
+        color: white;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 600;
+
+        padding: 15px 40px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    & .ios {
+        background-color: var(--green-500);
+        box-shadow: 0px 3px rgb(47, 150, 129);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: hsl(171, 76%, 56%);
+            box-shadow: 0px 3px hsl(171, 47%, 55%);
+        }
+    }
+
+    & .mac {
+        box-shadow: 0px 3px rgb(89, 100, 190);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: hsl(233, 92%, 75%);
+            box-shadow: 0px 3px rgb(112, 123, 206);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-inline: 32px;
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & p {
+            max-width: 310px;
+            line-height: 25px;
+            font-size: 16px;
+        }
+    }
+
+    .two-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
