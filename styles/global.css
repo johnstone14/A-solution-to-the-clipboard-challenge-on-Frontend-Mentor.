@@ -44,6 +44,10 @@ p {
     font-size: var(--font-size);
 }
 
+h1 {
+    font-weight: 600;
+}
+
 @media (max-width: 600px) {
     body {
         background-image: url(../assets/images/bg-header-mobile.png);
